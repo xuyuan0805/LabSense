@@ -2,6 +2,22 @@
 
 LabSense 面向医学检验本科生，用固定模拟数据完成“数据检查—缺失值实验—特征工程—相关性与 LASSO—模型比较—SHAP—PCA 与聚类”的完整课堂实验。应用只监听 `127.0.0.1`，不需要 GPT 登录，不上传数据，也不调用外部服务。
 
+## 在线 Streamlit 版
+
+仓库根目录提供 `streamlit_app.py`，可直接部署到 Streamlit Community Cloud。在线版复用与本地版相同的固定模拟数据、质控规则、患者级交叉验证、LASSO、模型比较、SHAP 和 PCA 计算逻辑，不使用写死的模型成绩。
+
+部署时填写：
+
+- Repository：`xuyuan0805/LabSense`
+- Branch：`main`
+- Main file path：`streamlit_app.py`
+
+本地预览在线版：
+
+```powershell
+py -3 -m streamlit run streamlit_app.py
+```
+
 ## Windows 启动
 
 1. 首次使用双击 `setup.bat`，创建项目专用 `.venv` 并安装固定版本依赖。
