@@ -1,0 +1,1 @@
+"""LabSense local teaching application."""
