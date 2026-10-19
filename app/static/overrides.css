@@ -1,0 +1,8 @@
+/* 课堂投屏导航：文字优先，避免横向滚动条遮挡首个步骤。 */
+nav{gap:2px;overflow-x:auto;overflow-y:hidden;padding:4px 0}
+nav button{min-width:max-content;padding:9px;color:#5e7482}
+nav button.active{color:#fff!important}
+.timeline{padding:30px 54px;justify-content:space-around;gap:32px}
+.timeline .node{min-width:150px;gap:10px}
+.timeline .arrow{padding:0 12px}
+@media(max-width:900px){.timeline{padding:22px;gap:12px}}
